@@ -1,6 +1,6 @@
 
-X_axis_speed = 3000 m/min
-Y_axis_speed = 4000 m/min
-Z_axis_speed = 2500 m/min
+X_axis_speed = 2000 m/min
+Y_axis_speed = 2000 m/min
+Z_axis_speed = 2000 m/min
 
-A_axis_speed = 10 rpm
+A_axis_speed = 20 rpm
