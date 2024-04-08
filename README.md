@@ -117,31 +117,31 @@ Z_axis_speed = 2500 m/min
 8 
 ##	Открываю файл CreateRobot/milling_machine.py  и добавляю строку:  A_rotary_table = 360 deg
 	
-Tool_rotor_speed = 12000 rpm
-X_stroke = 2000 mm
-Y_stroke = 1000 mm
-Z_stroke =  800 mm 
+	Tool_rotor_speed = 12000 rpm
+	X_stroke = 2000 mm
+	Y_stroke = 1000 mm
+	Z_stroke =  800 mm 
 
-A_rotary_table = 360 deg
+	A_rotary_table = 360 deg
 
 ##	Открываю файл  CreateRobot/Speed_control/Speed_controller.py и добавляю строку:  A_axis_speed = 10 rpm
 
-X_axis_speed = 3000 m/min
-Y_axis_speed = 4000 m/min
-Z_axis_speed = 2500 m/min
+	X_axis_speed = 3000 m/min
+	Y_axis_speed = 4000 m/min
+	Z_axis_speed = 2500 m/min
 
-A_axis_speed = 10 rpm
+	A_axis_speed = 10 rpm
 
 ##     В файлы readme.md добавляю комментарии
 
 9
-	Затем
+##	Затем
 	
 	git status
 
-Изменения, которые не в индексе для коммита:
-  (используйте «git add <файл>...», чтобы добавить файл в индекс)
-  (используйте «git restore <файл>...», чтобы отменить изменения в рабочем каталоге)
+	Изменения, которые не в индексе для коммита:
+  	(используйте «git add <файл>...», чтобы добавить файл в индекс)
+  	(используйте «git restore <файл>...», чтобы отменить изменения в рабочем каталоге)
 	изменено:      README.md
 	изменено:      milling_machine.py
 	изменено:      Speed_control/Speed_controller.py
@@ -151,9 +151,9 @@ A_axis_speed = 10 rpm
 
 	git status
 
-Текущая ветка: Axis_4
-Изменения, которые будут включены в коммит:
-  (используйте «git restore --staged <файл>...», чтобы убрать из индекса)
+	Текущая ветка: Axis_4
+	Изменения, которые будут включены в коммит:
+ 	 (используйте «git restore --staged <файл>...», чтобы убрать из индекса)
 	изменено:      README.md
 	изменено:      Speed_control/Speed_controller.py
 	изменено:      Speed_control/readme_speed.md
@@ -161,47 +161,49 @@ A_axis_speed = 10 rpm
 
 	git commit -m "Add fourth axis"
 
-[Axis_4 e178f05] Add fourth axis
- 4 files changed, 8 insertions(+)
+	[Axis_4 e178f05] Add fourth axis
+	 4 files changed, 8 insertions(+)
 
 10
 ##	Затем отправляю на удаленный репозиторий
 
 		git push --set-upstream origin Axis_4
 
-Перечисление объектов: 13, готово.
-Подсчет объектов: 100% (13/13), готово.
-При сжатии изменений используется до 2 потоков
-Сжатие объектов: 100% (7/7), готово.
-Запись объектов: 100% (7/7), 782 байта | 782.00 КиБ/с, готово.
-Всего 7 (изменения 2), повторно использовано 0 (изменения 0)
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote: 
-remote: Create a pull request for 'Axis_4' on GitHub by visiting:
-remote:      https://github.com/Parcius/CreateRobot/pull/new/Axis_4
-remote: 
-To https://github.com/Parcius/CreateRobot.git
- * [new branch]      Axis_4 -> Axis_4
-Ветка «Axis_4» отслеживает внешнюю ветку «Axis_4» из «origin».
+	Перечисление объектов: 13, готово.
+	Подсчет объектов: 100% (13/13), готово.
+	При сжатии изменений используется до 2 потоков
+	Сжатие объектов: 100% (7/7), готово.
+	Запись объектов: 100% (7/7), 782 байта | 782.00 КиБ/с, готово.
+	Всего 7 (изменения 2), повторно использовано 0 (изменения 0)
+	remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+	remote: 
+	remote: Create a pull request for 'Axis_4' on GitHub by visiting:
+	remote:      https://github.com/Parcius/CreateRobot/pull/new/Axis_4
+	remote: 
+	To https://github.com/Parcius/CreateRobot.git
+	 * [new branch]      Axis_4 -> Axis_4
+	Ветка «Axis_4» отслеживает внешнюю ветку «Axis_4» из «origin».
 
 ##	Захожу на github  и вижу что появилась ветвь Axis_4 
-##и в ней файлы изменены, и имеют добавленные строки. 
+## и в ней файлы изменены, и имеют добавленные строки. 
 
     		A_axis_speed = 10 rpm
 
 		A_rotary_table = 360 deg
 
-	А в main  файлы остались прежними 
+##	А в main  файлы остались прежними 
 
 11
 ##	Перехожу в командную строку и переключаюсь в главную ветку
 		git checkout main
+  
 	Переключились на ветку «main»
 	Эта ветка соответствует «origin/main».
 
 ##	Затем объединяю
 
 		git merge Axis_4
+  
 	Обновление bf01709..e178f05
 	Fast-forward
  	README.md                         | 2 ++
