@@ -74,7 +74,7 @@ Z_axis_speed = 2500 m/min
 		Origin
 
 6
-	Ввожу
+###	Ввожу
  		git branch -M main
 		git push -u origin main
 
