@@ -1,22 +1,22 @@
 1 
-#	Создал репозиторий на  сайте  https://github.com/Parcius/CreateRobot
-# и скопировал на домашний компьютер с помощью команды из командной строки:
+###	Создал репозиторий на  сайте  https://github.com/Parcius/CreateRobot
+### и скопировал на домашний компьютер с помощью команды из командной строки:
 ```
 		git clone https://github.com/Parcius/CreateRobot.git 			CreateRobot
 ```
 2 
-#	Захожу в папку CreateRobot на ПК и ввожу команду 
-
+###	Захожу в папку CreateRobot на ПК и ввожу команду 
+```
      	git status
-
- #  	Вижу сообщение       
+```
+ ###  	Вижу сообщение       
 
 		Текущая ветка: master
 
  3 
 	
-#	Создаю программу для управления фрезерным трех осевым станком, в двух файлах *.py
-#	Создаю файлы и вложенную папку. 
+###	Создаю программу для управления фрезерным трех осевым станком, в двух файлах *.py
+###	Создаю файлы и вложенную папку. 
 
 	CreateRobot/milling_machine.py :
 	
@@ -32,7 +32,7 @@ Y_axis_speed = 4000 m/min
 Z_axis_speed = 2500 m/min
 
 
-# 	Ввожу команду  git add *  в корневой папке репозитория на ПК и получаю сообщение
+### 	Ввожу команду  git add *  в корневой папке репозитория на ПК и получаю сообщение
 
 		новый файл:    README.md
 		новый файл:    Speed_control/Speed_controller.py
@@ -40,13 +40,13 @@ Z_axis_speed = 2500 m/min
 		новый файл:    milling_machine.py
 
 4
-#	Делаю комит
+###	Делаю комит
 
 		git commit
 
-#	Ввожу сообщение:  «Создание станка»
+###	Ввожу сообщение:  «Создание станка»
 
-#	Получаю на экране:
+###	Получаю на экране:
 
 		[master (корневой коммит) bf01709] Создание станка
  		4 files changed, 11 insertions(+)
@@ -57,20 +57,20 @@ Z_axis_speed = 2500 m/min
 
 5 
 	
-#	Ввожу команду
+###	Ввожу команду
 
 		git remote add origin 	https://github.com/Parcius/CreateRobot.git
 
-#	Получаю сообщение 
+###	Получаю сообщение 
 	
 	fatal: внешний репозиторий origin уже существует
 
 
-#	Ввожу команду
+###	Ввожу команду
 
 		git remote show
 	
-#	Показывает 
+###	Показывает 
 		Origin
 
 6
@@ -78,7 +78,7 @@ Z_axis_speed = 2500 m/min
  		git branch -M main
 		git push -u origin main
 
-#	Запрашивает имя пользователя и пароль. Генерирую токен на сайте и ввожу. Выводит сообщение :
+###	Запрашивает имя пользователя и пароль. Генерирую токен на сайте и ввожу. Выводит сообщение :
 
 	Перечисление объектов: 7, готово.
 	Подсчет объектов: 100% (7/7), готово.
@@ -90,32 +90,32 @@ Z_axis_speed = 2500 m/min
 	 * [new branch]      main -> main
 	Ветка «main» отслеживает внешнюю ветку «main» из «origin».
 
-#	Вижу появление данных репозитория на сайте
+###	Вижу появление данных репозитория на сайте
 
 
 
 7
-#	Ввожу команду
+###	Ввожу команду
 
 		git branch Axis_4
 		и 
 		git branch
 
-#	вижу сообщение
+###	вижу сообщение
 
 	  Axis_4
 	* main
 
-#	Ввожу
+###	Ввожу
 
 		git checkout Axis_4
 
-#	сообщение
+###	сообщение
 
 	Переключились на ветку «Axis_4»
 
 8 
-#	Открываю файл CreateRobot/milling_machine.py  и добавляю строку:  A_rotary_table = 360 deg
+###	Открываю файл CreateRobot/milling_machine.py  и добавляю строку:  A_rotary_table = 360 deg
 	
 		Tool_rotor_speed = 12000 rpm
 		X_stroke = 2000 mm
@@ -124,7 +124,7 @@ Z_axis_speed = 2500 m/min
 
 		A_rotary_table = 360 deg
 
-#	Открываю файл  CreateRobot/Speed_control/Speed_controller.py и добавляю строку:  A_axis_speed = 10 rpm
+###	Открываю файл  CreateRobot/Speed_control/Speed_controller.py и добавляю строку:  A_axis_speed = 10 rpm
 
 		X_axis_speed = 3000 m/min
 		Y_axis_speed = 4000 m/min
@@ -132,10 +132,10 @@ Z_axis_speed = 2500 m/min
 
 		A_axis_speed = 10 rpm
 
-#     В файлы readme.md добавляю комментарии
+###     В файлы readme.md добавляю комментарии
 
 9
-#	Затем
+###	Затем
 	
 	git status
 
@@ -165,7 +165,7 @@ Z_axis_speed = 2500 m/min
  4 files changed, 8 insertions(+)
 
 10
-#	Затем отправляю на удаленный репозиторий
+###	Затем отправляю на удаленный репозиторий
 
 		git push --set-upstream origin Axis_4
 
@@ -184,22 +184,22 @@ To https://github.com/Parcius/CreateRobot.git
  * [new branch]      Axis_4 -> Axis_4
 Ветка «Axis_4» отслеживает внешнюю ветку «Axis_4» из «origin».
 
-#	Захожу на github  и вижу что появилась ветвь Axis_4 
+###	Захожу на github  и вижу что появилась ветвь Axis_4 
 # и в ней файлы изменены, и имеют добавленные строки. 
 
     		A_axis_speed = 10 rpm
 
 		A_rotary_table = 360 deg
 
-#	А в main  файлы остались прежними 
+###	А в main  файлы остались прежними 
 
 11
-#	Перехожу в командную строку и переключаюсь в главную ветку
+###	Перехожу в командную строку и переключаюсь в главную ветку
 		git checkout main
 	Переключились на ветку «main»
 	Эта ветка соответствует «origin/main».
 
-#	Затем объединяю
+###	Затем объединяю
 
 		git merge Axis_4
 	Обновление bf01709..e178f05
@@ -210,35 +210,35 @@ To https://github.com/Parcius/CreateRobot.git
  	milling_machine.py                | 2 ++
  	4 files changed, 8 insertions(+)
 
-#	Переключаюсь по очереди на разные ветки и вижу что файлы в них имеют идентичное содержание
+###	Переключаюсь по очереди на разные ветки и вижу что файлы в них имеют идентичное содержание
 
-#	Затем захожу на сайт Github выбираю 
+###	Затем захожу на сайт Github выбираю 
 
 		Pull requests
 		New pull request
 		View pull request
 
-#	Вижу сообщение 
+###	Вижу сообщение 
 
 		«This branch has no conflicts with the base branch»
 
-#	Выбираю:
+###	Выбираю:
 
 		Merge pull request
 		Confirm merge
 
-#	Появляется сообщение: 
+###	Появляется сообщение: 
 
 		Pull request successfully merged and closed
 
-#	Захожу в окно репозитория и просматриваю файлы, они идентичны в ветках main и  Axis_4
+###	Захожу в окно репозитория и просматриваю файлы, они идентичны в ветках main и  Axis_4
 
-#	Переписываю репозиторий на ПК несмотря на то что ветки уже объединены на ПК
+###	Переписываю репозиторий на ПК несмотря на то что ветки уже объединены на ПК
 
 		git pull
 
 12
-#	Затем создаю еще одну ветку и меняю параметры скоростей файла speed_controller.py 
+###	Затем создаю еще одну ветку и меняю параметры скоростей файла speed_controller.py 
 		X_axis_speed = 2000 m/min
 		Y_axis_speed = 2000 m/min
 		Z_axis_speed = 2000 m/min
@@ -264,12 +264,12 @@ To https://github.com/Parcius/CreateRobot.git
 	Ветка «Speed» отслеживает внешнюю ветку «Speed» из «origin».
 
 13
-#	На сайте появляется предложение на Pull request. Делаю его. Конфликтов опять не возникает.
-#	Перехожу в командную строку и преписываю на компьютер 
+###	На сайте появляется предложение на Pull request. Делаю его. Конфликтов опять не возникает.
+###	Перехожу в командную строку и преписываю на компьютер 
 
 		git pull
 
-# 	Открываю файл и вижу значения скоростей те же самые что и до слияния
+### 	Открываю файл и вижу значения скоростей те же самые что и до слияния
 
 	CreateRobot/Speed_control/Speed_controller.py 
 	X_axis_speed = 3000 m/min
@@ -278,7 +278,7 @@ To https://github.com/Parcius/CreateRobot.git
 
 	A_axis_speed = 10 rpm
 
-#	Тогда перехожу на ветку main  и делаю слияние в ней 
+###	Тогда перехожу на ветку main  и делаю слияние в ней 
 		git checkout main
 
 		git pull
@@ -290,7 +290,7 @@ To https://github.com/Parcius/CreateRobot.git
 	 2 files changed, 239 insertions(+), 6 deletions(-)
 
 	
-#	Теперь значения скоростей новые  
+###	Теперь значения скоростей новые  
 	
 		X_axis_speed = 2000 m/min
 		Y_axis_speed = 2000 m/min
