@@ -20,16 +20,16 @@
 
 	CreateRobot/milling_machine.py :
 	
-Tool_rotor_speed = 12000 rpm
-X_stroke = 2000 mm\n
-Y_stroke = 1000 mm
-Z_stroke =  800 mm 
+		Tool_rotor_speed = 12000 rpm
+		X_stroke = 2000 mm
+		Y_stroke = 1000 mm
+		Z_stroke =  800 mm 
 
 	CreateRobot/Speed_control/Speed_controller.py :
 
-X_axis_speed = 3000 m/min
-Y_axis_speed = 4000 m/min
-Z_axis_speed = 2500 m/min
+		X_axis_speed = 3000 m/min
+		Y_axis_speed = 4000 m/min
+		Z_axis_speed = 2500 m/min
 
 
 ### 	Ввожу команду  git add *  в корневой папке репозитория на ПК и получаю сообщение
